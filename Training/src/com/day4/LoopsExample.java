@@ -15,3 +15,5 @@ public class LoopsExample {
 //2*1=2
 //2*2=4
 //2*3=6
+
+//1 35 76 89
