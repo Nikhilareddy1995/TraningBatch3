@@ -38,7 +38,8 @@ public class SetExample {
 		s1.add("abf");
 		s1.add("hgfiudsgjkf");
 		s1.add("bxhcg");
-		System.out.println(s1);
+		System.out.println(s1); 
+		System.out.println("");
 
 	}
 
