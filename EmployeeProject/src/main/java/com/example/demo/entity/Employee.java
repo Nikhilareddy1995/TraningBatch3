@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
+import java.io.Serializable;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,13 +10,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "employee")
-public class Employee {
+@Table(name = "employee_information")
+public class Employee implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5489786339975849246L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int empId;
 
+	@Column(name = "emp_name")
 	private String name;
 	private String address;
 	private long salary;
@@ -49,7 +58,5 @@ public class Employee {
 	public void setSalary(long salary) {
 		this.salary = salary;
 	}
-
-	
 
 }

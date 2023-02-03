@@ -5,6 +5,7 @@ public class EmployeeDto {
 	private String name;
 	private String address;
 	private long salary;
+	private long id;
 
 	public String getName() {
 		return name;
@@ -28,6 +29,14 @@ public class EmployeeDto {
 
 	public void setSalary(long salary) {
 		this.salary = salary;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 }
