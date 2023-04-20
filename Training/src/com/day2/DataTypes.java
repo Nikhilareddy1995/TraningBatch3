@@ -47,7 +47,8 @@ public class DataTypes {
 		DataTypes dataTypes = new DataTypes();
 		dataTypes.add(1, 13);
 		int result = dataTypes.sub(12, 10);
-		System.out.print(result);
+		System.out.print(result);//
+	
 
 	}
 
