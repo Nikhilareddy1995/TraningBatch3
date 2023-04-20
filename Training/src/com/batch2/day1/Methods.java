@@ -1,4 +1,4 @@
-package com.btach2.day1;
+package com.batch2.day1;
 
 public class Methods {
 // access specifer + return type + arguments/parameters
