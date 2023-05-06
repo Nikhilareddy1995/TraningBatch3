@@ -53,8 +53,9 @@ public class DepartmentController {
 	}
 
 	@PatchMapping
-	public ResponseEntity<Department> updateDepartmentPartially(@Valid @RequestBody PatchDeptDto deptDto) {
-		Department department = departmentService.updateDepartmentWithFewDeatils(deptDto);
+	public ResponseEntity<Department> updateDepartmentPartially(@Valid @RequestBody PatchDeptDto abc) {
+		Department department = departmentService.updateDepartmentWithFewDeatils(abc);
+		System.out.println("NIkhila");
 		return new ResponseEntity<Department>(department, HttpStatus.OK);
 	}
 
