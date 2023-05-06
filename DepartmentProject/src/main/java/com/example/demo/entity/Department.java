@@ -17,7 +17,7 @@ public class Department implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -6849547092415845555L;
-	// primarykey
+	// primarykey for rference
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long deptId;
